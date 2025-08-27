@@ -12,7 +12,17 @@
     <div class="container">
         <h1>Thank You!</h1>
         <p>Your self-assessment has been submitted successfully.</p>
-        <a href="index.html" class="submit-btn" style="text-decoration: none;">Submit Another</a>
+        <!-- Replaced the <a> tag with this <button> -->
+        <button id="exit-btn" class="submit-btn">Exit</button>
     </div>
+
+    <!-- Add this script to make the button work -->
+    <script>
+        document.getElementById('exit-btn').addEventListener('click', () => {
+            // This command attempts to close the current window or tab.
+            // Note: For security reasons, browsers may only allow scripts to close windows that were opened by a script.
+            window.close();
+        });
+    </script>
 </body>
 </html>
