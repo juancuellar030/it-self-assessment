@@ -40,6 +40,11 @@ h1, h2 {
     border-bottom-color: #ff6b6b;
 }
 
+/* Add this new rule for the name input */
+#name {
+    text-transform: uppercase;
+}
+
 .input-container label {
     position: absolute;
     top: 10px;
