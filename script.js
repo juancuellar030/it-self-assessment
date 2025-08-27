@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedGradeInput = document.getElementById('selected-grade');
     const form = document.getElementById('assessment-form');
 
+        // --- Add this new section ---
+    const nameInput = document.getElementById('name');
+    nameInput.addEventListener('input', () => {
+        nameInput.value = nameInput.value.toUpperCase();
+    });
+
     // --- The Google Apps Script URL ---
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxskb5bteUDlN4flFKPrXwneFQFqv8HzNJJcRfDy-ZgrrSipf_MTZysdIw1XIYhmxs2BQ/exec';
 
